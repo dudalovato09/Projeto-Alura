@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify Imersão</title>
+
+        <!-- Este comando tem a finalidade de limpar o css do código antes de exeecutá-lo para que alguns detalhes automáticos não apareçam--> 
+        <link rel="stylesheet" href="reset.css"> 
+        <link rel="stylesheet" href="styles.css">
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+            integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+            integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+    </head>
+    <body>
+
+        <div class="sidebar">
+            <nav class="sidebar__navigation">
+
+                <div class="logo">
+                    <a href="">
+                        <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                    </a>
+                </div>
+                
+                <ul>
+                     <li>
+                        <a href="">
+                                <span class="fa fa-home"></span>
+                                <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-search"></span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <!--Desafio aula 1-->
+            <div class="library">
+
+                <div class="library__content"> <!--Utilizar os dois _ é um padrão importante de se utilizar-->
+                    <button class="library__button">
+                        <span class="fa fas fa-book"></span>
+                        <span>Sua Biblioteca</span>
+                    </button>
+                    <span class="fa fa-plus"></span>
+                </div>
+
+                <!-- Início da aula 2 -->
+                <section class="section-playlist">
+                    <div class="section-playlist__content">
+                        <span class="text title"> Crie sua primeira playlist</span> <!--Aqui é colocado mais de uma classe neste elemento, não é recomendado por muitas, mas até 3 é ok-->
+                        <span class="text subtitle">É fácil, vamos te ajudar.</span>
+
+                        <button class="section-playlist__button">
+                            <span>Criar playlist</span>
+                        </button>
+                    </div>
+                </section>
+
+                <div class="cookies">
+                    <a href="">Cookies</a>
+                </div>
+
+                <div class="languages">
+                    <button class="languages__button">
+                        <span class="fa fa-globe"></span>
+                        <span>Português do Brasil</span>
+                    </button>
+                 </div>
+            </div>
+        </div>
+
+        <!--Desafio aula 2-->
+        <footer class="disclaimer-premium">
+            <div class="text">
+                <p class="disclaimer-premium__title">Testar o Premium de Graça</p>
+                <p class="disclaimer-premium__subtitle">
+                    Increva-se para curtir a música ilimitada e podcastas só com alguns anúncios.
+                    Não precisa de cartão de crédito.
+                </p>
+            </div>
+
+            <div class="button">
+                <button type="button">Increva-se Grátis</button>
+            </div>
+        </footer>
+
+    </body>
+</html>
