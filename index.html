@@ -6,8 +6,10 @@
         <title>Spotify Imersão</title>
 
         <!-- Este comando tem a finalidade de limpar o css do código antes de exeecutá-lo para que alguns detalhes automáticos não apareçam--> 
-        <link rel="stylesheet" href="reset.css"> 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./src/styles/reset.css"> 
+        <link rel="stylesheet" href="./src/styles/vars.css">
+        <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+        <link rel="stylesheet" href="./src/styles/main-content.css">
     
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
             integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
@@ -17,12 +19,13 @@
     </head>
     <body>
 
+        <!--Início da Aula 1-->
         <div class="sidebar">
             <nav class="sidebar__navigation">
 
                 <div class="logo">
                     <a href="">
-                        <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                        <img src="./src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
                     </a>
                 </div>
                 
@@ -78,6 +81,49 @@
                  </div>
             </div>
         </div>
+
+        <!-- Iniício da Aula 3 -->
+         <main> <!-- Se você não tem um main para assecibilidade para que em caso dee tecnologia assistida ela mostree qual o conteúdo principal da página-->
+            <div class="main-container">
+                <nav class="header__navigation">
+                    <div class="navigation">
+
+                        <button class="arrow-left">
+                            <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                        </button>
+                        <button class="arrow-right">
+                            <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                        </button>
+
+                    </div>
+
+                        <div class="header__search">
+                            <img src="./src/assets/icons/search.png" alt=""> <!--Este alt podee ficar vazio pois esta imageem não esta sendo usada para compor a página, ela não tem valor de conteúdo, só esta "fazendo uma graça", o ideal seria carregar ela no CSS-->
+                            <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?"/>
+                        </div>
+
+                        <div class="header__login">
+                            <button class="subscribe">Inscreva-se</button>
+                            <button class="login">Entrar</button>
+                        </div>
+                </nav>
+
+                <!--Desafio da Aula 3-->
+
+                <!--Playlist-->
+                <div class="playlist-container">
+                    <div id="result-playlists">
+                        <div class="playlist">
+                            <h1 id="greeting">Boas Vindas</h1>
+                            <h2 class="greeting-subtitle">Navegar por todas das seções</h2>
+                        </div>
+
+                        <!--Lista de Cards (aula 4)-->
+                    </div>
+                </div>
+
+            </div>
+         </main>
 
         <!--Desafio aula 2-->
         <footer class="disclaimer-premium">

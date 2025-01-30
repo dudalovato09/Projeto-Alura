@@ -1,0 +1,12 @@
+/*EEste documento é importante para deeclarar váriavies de caracteríticas que são mais utilizadas para que não seja 
+preciso declarar elas o tempo todo dentro dos estilos css, ajudando a padronizar e otimizar tempo e espaço em código*/
+
+:root{
+    /* Fontes */
+    --font-dm-sans:"DM Sans", sans-serif;
+
+    /*Colors*/
+
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0,0,7);
+}
