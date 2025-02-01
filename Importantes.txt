@@ -33,10 +33,20 @@ Altere para "none" ou "gutter" para remover ou minimizar o destaque.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Instalar o React
 
-- Abrir o Git Bash
-- Dar o comando: npx create-react-app + o nome paa este react
+- Abrir o Git Bash ou PowerShell
 
-Remoção
+- Para criar apenas usar o comando 
+    npx create-react-app + nome da pasta
+
+-- Este processo precisa ser feito sempre ao sair e entrar novamente no projeto --
+
+- Intalar as dependências todas vez que entar e sair do projeto com o comando (entrar na pasta e instalar)
+    npm install @testing-library/react@latest web-vitals
+
+- Para testar se deu certo (sempre estando dentro da pasta)
+    npm start
+
+*Remoção
 
 - Caso queira romover completamente o projeto dar o comando npm uninstall -g create-react-app
 
@@ -53,13 +63,13 @@ Remoção
 - No Windows (Git Bash ou Prompt de Comando), use:
     rmdir /s /q nome-do-projeto
 
-Renomear 
+*Renomear 
 
 - mv nome-antigo nome-novo
 ou
 - rename nome-antigo nome-novo
 
-Se da erro na ntalação mas cria a pasta siga estes comandos 
+*Se da erro na ntalação mas cria a pasta siga estes comandos 
 
 - cd spotify-alura-react
 - npm install --legacy-peer-deps
@@ -69,6 +79,16 @@ Se da erro na ntalação mas cria a pasta siga estes comandos
     npm install --legacy-peer-deps
     (No Windows, use rmdir /s /q node_modules package-lock.json no PowerShell.)
 
-- Para testar se deu certo 
-    npm start
+----------------------------------------------------------------------------------------------------------------------------------------------
+Para alterar o react 
+
+- Entrar na pasta App.js 
+
+- Nesta localização alterar e colocar um H2 
+        <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+       ------ <h2>Imersão Front-end Alura 2025</h2> ------ (alteração)
+
+- Ao salvar ele ira compilar automaticamente 
+- Ele não irá completar o comando ao dar tab pois ele trabalha diferente (html e js juntos)
 
