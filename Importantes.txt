@@ -1,0 +1,74 @@
+IMPORTANTE!!! 
+
+Desinstala o json 
+ Comando: npm uninstall -g json-server
+
+Instala na versão correta
+    Comando: npm install -g json-server@0.17
+
+Verifica se foi instalado
+    Comando: npm -v
+
+Verifica a versão correta 
+    Comando: json-server --version
+
+- Não seguir como no vide tutorial e utilizar o comando "npm i json-server -g" pois ele pode atualizar a versão de forma automática 
+
+Executa direto o seguinte comando
+    Comando: json-server --watch api-artists/artists.json --port 3000 
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Método 1: Alterando nas configurações gráficas
+Abra as configurações
+
+No VS Code, pressione Ctrl + , (vírgula) para abrir as configurações.
+Busque por "cursor line"
+
+Digite editor.renderLineHighlight na barra de pesquisa.
+Modifique a opção
+
+Altere para "none" ou "gutter" para remover ou minimizar o destaque.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+Instalar o React
+
+- Abrir o Git Bash
+- Dar o comando: npx create-react-app + o nome paa este react
+
+Remoção
+
+- Caso queira romover completamente o projeto dar o comando npm uninstall -g create-react-app
+
+
+- No Git Bash, use o comando cd para entrar na pasta onde o projeto foi criado:
+    cd caminho/do/projeto
+
+- Se você já está dentro da pasta do projeto, volte para o diretório pai:
+    cd ..
+
+- No Git Bash (Linux/macOS), use:
+    rm -rf nome-do-projeto
+
+- No Windows (Git Bash ou Prompt de Comando), use:
+    rmdir /s /q nome-do-projeto
+
+Renomear 
+
+- mv nome-antigo nome-novo
+ou
+- rename nome-antigo nome-novo
+
+Se da erro na ntalação mas cria a pasta siga estes comandos 
+
+- cd spotify-alura-react
+- npm install --legacy-peer-deps
+
+- Se ainda houver erro 
+    rm -rf node_modules package-lock.json
+    npm install --legacy-peer-deps
+    (No Windows, use rmdir /s /q node_modules package-lock.json no PowerShell.)
+
+- Para testar se deu certo 
+    npm start
+
